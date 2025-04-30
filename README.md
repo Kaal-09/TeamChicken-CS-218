@@ -1,12 +1,12 @@
-# 🎟️ TokenMaster - Decentralized Ticketing on Ethereum
+#  TokenMaster - Decentralized Ticketing on Ethereum
 
 TokenMaster is a smart contract-based event ticketing system built using Solidity and ERC-721 tokens. It allows event creators to list events (called "occasions") and lets users buy, sell, cancel, and resell tickets securely and transparently on the blockchain.
 
 ---
 
-## ✨ Features
+##  Features
 
-### ✅ Version 1 Highlights:
+###  Version 1 Highlights:
 - Event creators can **list new occasions** with details like cost, date, time, and location.
 - Users can **buy tickets** (1 per user per event) with seat selection.
 - Allows **ticket cancellation** with 90% refund to the buyer and 10% to the event creator.
@@ -14,23 +14,23 @@ TokenMaster is a smart contract-based event ticketing system built using Solidit
 - Tracks ticket ownership and **seat allocation**.
 - Stores all data like occasions, bookings, and resales **on-chain**.
 
-### ⚠️ Limitations of Version 1:
+### Limitations of Version 1:
 - A user can **only buy one ticket per event**.
 - Ticket lookup and event management are a bit complex due to nested mappings.
 - All metadata is stored on-chain which can be **gas-heavy**.
 
 ---
 
-## 🔁 Version 2 Enhancements:
+##  Version 2 Enhancements:
 To overcome limitations in version 1, a new streamlined version was created with:
 
-### 🔧 Improvements:
+### Improvements:
 - Allows users to **buy multiple tickets** in a single transaction.
 - Simplified structure with **flat occasion and ticket tracking**.
 - **Efficient resale listing**: Caps resale price at **1.5x original price**.
 - Utility functions to **fetch all occasions and specific details**.
 
-### 📦 Data Stored:
+### Data Stored:
 - `Occasion`: ID, cost, total seats, seats taken.
 - `ResaleListing`: tokenId, price, seller.
 - Mappings to track:
@@ -40,7 +40,7 @@ To overcome limitations in version 1, a new streamlined version was created with
 
 ---
 
-## 🛠️ Smart Contracts
+##  Smart Contracts
 
 ### Version 1 Contract:
 File: `contracts/TokenMasterV1.sol`
@@ -54,7 +54,7 @@ File: `contracts/TokenMasterV2.sol`
 
 ---
 
-## 🧪 Getting Started
+## Getting Started
 
 1. Clone the repository.
 2. Install dependencies:
